@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'norse-bold';
+    src: url(fonts/norse-bold.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    height: 100vh;
+    /* height: 100%; */
+
+}
+
+.layout {
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    justify-content: space-between;
+    /* position: relative; */
+    /* align-content: space-between; */
+}
+.logo-background {
+    background-color: rgba(0, 0, 0, 0.278);
+    text-align: center;
+    height: 250px;
+    margin-top: 40%;
+}
+    .logo-name {
+        font-family: 'norse-bold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 190px;
+        color: white;
+    }
+    .logo-img {
+        width: auto;
+        height: 200px;
+    }
+.credit {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+    /* top: 0; */
+}
+
+.main-body {
+    width: 60%;
+    background-color: rgb(248, 249, 250)	;
+}
+
+.main-header {
+    /* display: flex;
+    justify-content: center;*/
+    vertical-align: middle;
+    padding: 20px;
+    height: 33.3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.main-form {
+    height: 33.3%;
+    background-color: white;
+}
+
+.main-footer {
+    height: 33.3%;
+}
