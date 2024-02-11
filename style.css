@@ -7,9 +7,15 @@
 
 * {
     margin: 0px;
-    height: 100vh;
+    height: 100dvh;
     /* height: 100%; */
 
+}
+
+body {
+    /* height: 100dvh; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 .layout {
@@ -23,30 +29,60 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 40%;
-    justify-content: space-between;
+    /* border-style: solid; */
+
+    /* align-items: center; */
+    /* justify-content: space-between; */
     /* position: relative; */
     /* align-content: space-between; */
 }
-.logo-background {
-    background-color: rgba(0, 0, 0, 0.278);
-    text-align: center;
-    height: 250px;
-    margin-top: 40%;
+.nav-body {
+    /* min-height: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-style: solid;
+    border-color: red; */
+    flex-grow: 1;
 }
+
+    .logo-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.278);
+        text-align: center;
+        height: 180px;
+        /* border-style: solid;
+        border-color: red; */
+        margin-bottom: 40%;
+    }
     .logo-name {
         font-family: 'norse-bold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 190px;
+        font-size: 100px;
         color: white;
+        /* border-color: red;
+        border-style: solid; */
+        height: auto;
+        vertical-align: middle;
     }
     .logo-img {
         width: auto;
-        height: 200px;
+        height: 160px;
+        /* border-color: red;
+        border-style: solid */
     }
 .credit {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: auto;
+    /* border-style: solid;
+    border-color: red; */
+    height: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* flex-shrink: 1; */
+    /* margin-top: auto; */
     /* position: absolute; */
     /* bottom: 0; */
     /* left: 50%;
@@ -57,25 +93,110 @@
 
 .main-body {
     width: 60%;
-    background-color: rgb(248, 249, 250)	;
+    background-color: rgb(248, 249, 250);
+    /* border-style: solid; */
+    /* border-color: rgb(0, 255, 140);
+    position: relative; */
 }
 
 .main-header {
-    /* display: flex;
-    justify-content: center;*/
-    vertical-align: middle;
-    padding: 20px;
-    height: 33.3%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 40px; */
+    height: 33.3dvh;
+    /* flex-grow: 1; */
+    /* border-style: solid;
+    border-color: red; */
+    margin-bottom: 40px;
+}
+
+.main-header-top {
+    min-height: 50%;
+    flex-grow: 1;
+}
+
+.header-message p, form p {
+    /* margin-top: 50%; */
+    font-size: 24px;
+    font-weight: bold;
+    height: auto;
+    padding: 20px 40px;
+    /* margin-top: 20px; */
+}
+
+form { 
+    width: 100%;
+    height: auto;
+}
+
+input , label, span {
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgba(185, 185, 185, 0.272);
+}
+
+label{
+    font-size: 12px;
+    height: auto;
+}
+
+input {
+    padding: 1px 8px;
+    font-size: 14px;
 }
 
 .main-form {
-    height: 33.3%;
+    display: flex;
+    height: auto;
     background-color: white;
+    /* padding: 40px; */
+    /* border-style: solid;
+    border-color: red; */
+    box-shadow: 2px 2px 10px rgb(204, 204, 204);
+}
+
+.form-row {
+    display: flex;
+    height: auto;
+}
+
+.field {
+    padding: 0px 40px;
+    display: block;
+    height: auto;
 }
 
 .main-footer {
-    height: 33.3%;
+    height: auto;
+    padding: 40px;
+    /* border-style: solid;
+    border-color: rgb(8, 0, 255); */
+}
+
+.main-footer p {
+    margin-top: 40px;
+    height: 0px;
+}
+
+button {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(84,99,66);
+    box-shadow: 2px 2px 10px rgb(204, 204, 204);
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+}
+
+a {
+    color: rgb(84,99,66); 
+    font-weight: bold;
+    text-decoration: none;
 }
