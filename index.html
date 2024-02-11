@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <div class="layout">
@@ -15,7 +16,7 @@
                     <span class="logo-name">Odin</span>
                 </div>
             </div>
-            <div class="credit">Photo by Halie West on Unsplash</div>
+            <div class="credit">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></div>
         </div>
         <div class="main-body">
             <div class="main-header">
@@ -27,48 +28,48 @@
                 </div>
             </div>
             <div class="main-form">
-                <form>
+                <form action="" method="post" id="sign-up-form">
                     <p>Let's do this!</p>
                     <div class="form-row">
                         <div class="field">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name"/>
-                            <span></span>
+                            <input type="text" id="first_name" name="first_name" value="Testy" required/>
+                            <span id="err_first_name">REQUIRED</span>
                         </div>
                             <div class="field">
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name"/>
-                            <span></span>
+                            <input type="text" id="last_name" name="last_name" value="Kel" required/>
+                            <span id="err_last_name">REQUIRED</span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="field">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email"/>
-                            <span></span>
+                            <input type="email" id="email" name="email" value="test@test.com" required/>
+                            <span id="err_email">REQUIRED</span>
                         </div>           
                         <div class="field">       
                             <label for="phone">PHONE NUMBER</label>
                             <input type="tel" id="phone" name="phone"/>
-                            <span></span>
+                            <span id="err_phone"></span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="field">
-                            <label for="password">PASSWORD</label>
+                            <label for="password">PASSWORD (REQUIRED)</label>
                             <input type="password" id="password" name="password"/>
-                            <span></span>
+                            <span id="err_pwd">REQUIRED</span>
                         </div>
                         <div class="field">
-                            <label for="conf_password">CONFIRM PASSWORD</label>
+                            <label for="conf_password">CONFIRM PASSWORD (REQUIRED)</label>
                             <input type="password" id="conf_password" name="conf_password"/>
-                            <span></span>
+                            <span id="err_pwd_conf"></span>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="main-footer">
-                <button>Create Account</button>
+                <button type="submit" form="sign-up-form" id="btnSubmit">Create Account</button>
                 <p>Already have an account? <a href="#">Login</a></p>
             </div>
         </div>
