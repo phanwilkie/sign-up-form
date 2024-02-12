@@ -171,6 +171,7 @@ input:focus {
 .form-row {
     display: flex;
     height: auto;
+    margin-bottom: 40px;
 }
 
 .field {
@@ -182,6 +183,10 @@ input:focus {
 .field span {
     color: red;
     font-size: 10px;
+    margin-top: 1px;
+    width: auto;
+    height: 10px;
+    padding-left: 6px;
 }
 
 .main-footer {
